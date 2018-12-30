@@ -12,6 +12,8 @@
 		5C00793621D93D1300D30451 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C00793421D93D1300D30451 /* Main.storyboard */; };
 		5C00793821D93D1600D30451 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C00793721D93D1600D30451 /* Assets.xcassets */; };
 		5C00793B21D93D1600D30451 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C00793921D93D1600D30451 /* LaunchScreen.storyboard */; };
+		5C00794521D9440400D30451 /* KeychainWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C00794321D9440400D30451 /* KeychainWrapper.swift */; };
+		5C00794621D9440400D30451 /* KeychainItemAccessibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C00794421D9440400D30451 /* KeychainItemAccessibility.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		5C00793721D93D1600D30451 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5C00793A21D93D1600D30451 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5C00793C21D93D1600D30451 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5C00794321D9440400D30451 /* KeychainWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainWrapper.swift; sourceTree = "<group>"; };
+		5C00794421D9440400D30451 /* KeychainItemAccessibility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainItemAccessibility.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +42,7 @@
 		5C00792421D93D1300D30451 = {
 			isa = PBXGroup;
 			children = (
+				5C00794221D943D000D30451 /* KeyChainWrapper */,
 				5C00792F21D93D1300D30451 /* Secret Swift */,
 				5C00792E21D93D1300D30451 /* Products */,
 			);
@@ -62,6 +67,15 @@
 				5C00793C21D93D1600D30451 /* Info.plist */,
 			);
 			path = "Secret Swift";
+			sourceTree = "<group>";
+		};
+		5C00794221D943D000D30451 /* KeyChainWrapper */ = {
+			isa = PBXGroup;
+			children = (
+				5C00794421D9440400D30451 /* KeychainItemAccessibility.swift */,
+				5C00794321D9440400D30451 /* KeychainWrapper.swift */,
+			);
+			path = KeyChainWrapper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,6 +149,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C00794521D9440400D30451 /* KeychainWrapper.swift in Sources */,
+				5C00794621D9440400D30451 /* KeychainItemAccessibility.swift in Sources */,
 				5C00793321D93D1300D30451 /* ViewController.swift in Sources */,
 				5C00793121D93D1300D30451 /* AppDelegate.swift in Sources */,
 			);
