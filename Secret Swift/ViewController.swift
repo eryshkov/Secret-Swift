@@ -40,6 +40,9 @@ class ViewController: UIViewController {
         notificationCenter.addObserver(self, selector: #selector(adjustForKeyboard), name: UIResponder.keyboardWillChangeFrameNotification, object: nil)
     }
 
-
+    @IBAction func authenticateTapped(_ sender: UIButton) {
+        
+    }
+    
 }
 

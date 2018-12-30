@@ -17,7 +17,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="IMh-7A-CNt">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HaA-PR-TPg">
+                                <rect key="frame" x="143.5" y="314" width="88" height="39"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="HaA-PR-TPg" secondAttribute="height" multiplier="25:11" id="mR3-6t-KXa"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="44" id="w5a-ci-dSo"/>
+                                </constraints>
+                                <state key="normal" title="Authenticate"/>
+                                <connections>
+                                    <action selector="authenticateTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="D6I-F4-ux1"/>
+                                </connections>
+                            </button>
+                            <textView hidden="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="IMh-7A-CNt">
                                 <rect key="frame" x="16" y="69" width="343" height="593"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -27,9 +38,11 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="IMh-7A-CNt" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="5" id="E4E-Kl-wyf"/>
+                            <constraint firstItem="HaA-PR-TPg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ppw-Qy-0Z6"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="IMh-7A-CNt" secondAttribute="bottom" constant="5" id="VgX-Zf-cyz"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="IMh-7A-CNt" secondAttribute="trailing" constant="16" id="bfc-Su-QWj"/>
                             <constraint firstItem="IMh-7A-CNt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="djp-Mv-70j"/>
+                            <constraint firstItem="HaA-PR-TPg" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="gxI-s0-RB1"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
