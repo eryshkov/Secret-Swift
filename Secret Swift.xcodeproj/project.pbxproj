@@ -26,6 +26,9 @@
 		5C00793C21D93D1600D30451 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5C00794321D9440400D30451 /* KeychainWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainWrapper.swift; sourceTree = "<group>"; };
 		5C00794421D9440400D30451 /* KeychainItemAccessibility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainItemAccessibility.swift; sourceTree = "<group>"; };
+		5C00794821D94C8200D30451 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		5C00794921D94EC200D30451 /* 2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpeg; sourceTree = "<group>"; };
+		5C00794A21D94EC200D30451 /* 1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpeg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +45,8 @@
 		5C00792421D93D1300D30451 = {
 			isa = PBXGroup;
 			children = (
+				5C00794821D94C8200D30451 /* README.md */,
+				5C00794721D94C7200D30451 /* screens */,
 				5C00794221D943D000D30451 /* KeyChainWrapper */,
 				5C00792F21D93D1300D30451 /* Secret Swift */,
 				5C00792E21D93D1300D30451 /* Products */,
@@ -76,6 +81,15 @@
 				5C00794321D9440400D30451 /* KeychainWrapper.swift */,
 			);
 			path = KeyChainWrapper;
+			sourceTree = "<group>";
+		};
+		5C00794721D94C7200D30451 /* screens */ = {
+			isa = PBXGroup;
+			children = (
+				5C00794A21D94EC200D30451 /* 1.jpeg */,
+				5C00794921D94EC200D30451 /* 2.jpeg */,
+			);
+			path = screens;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
