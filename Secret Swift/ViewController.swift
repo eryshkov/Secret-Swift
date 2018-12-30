@@ -10,8 +10,10 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    //MARK: -
     @IBOutlet weak var secret: UITextView!
     
+    //MARK: -
     @objc func adjustForKeyboard(notification: Notification) {
         let userInfo = notification.userInfo!
         
@@ -30,6 +32,25 @@ class ViewController: UIViewController {
         secret.scrollRangeToVisible(selectedRange)
     }
     
+    func unlockSecretMessage() {
+        secret.isHidden = false
+        title = "Secret stuff!"
+        
+        if let text = KeychainWrapper.standard.string(forKey: "SecretMessage") {
+            secret.text = text
+        }
+    }
+    
+    @objc func saveSecretMessage() {
+        if !secret.isHidden {
+            _ = KeychainWrapper.standard.set(secret.text, forKey: "SecretMessage")
+            secret.resignFirstResponder()
+            secret.isHidden = true
+            title = "Nothing to see here"
+        }
+    }
+    
+    //MARK: -
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -39,11 +60,14 @@ class ViewController: UIViewController {
         
         notificationCenter.addObserver(self, selector: #selector(adjustForKeyboard), name: UIResponder.keyboardWillChangeFrameNotification, object: nil)
         
+        notificationCenter.addObserver(self, selector: #selector(saveSecretMessage), name: UIApplication.willResignActiveNotification, object: nil)
+        
         title = "Nothing to see here"
     }
 
+    //MARK: -
     @IBAction func authenticateTapped(_ sender: UIButton) {
-        
+        unlockSecretMessage()
     }
     
 }
